@@ -16,5 +16,5 @@ def test_json():
     assert test_class.get_one_item_sum(json.loads(TEST_JSON_TWO)) == 93
     assert test_class.get_one_item_sum(json.loads(TEST_JSON_THREE)) == 70
     assert test_class.get_one_item_sum(json.loads(TEST_JSON_FOUR)) == 0
-    print test_class.get_one_item_sum(json.loads(TEST_JSON_FIVE)) == 0
+    assert test_class.get_one_item_sum(json.loads(TEST_JSON_FIVE)) == 0
 
