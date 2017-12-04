@@ -41,7 +41,7 @@ def main():
         fullpath = '%s\%s' % (input_file_dir, file)
         if os.name != 'nt':
             fullpath = '%s/%s' % (input_file_dir, file)
-        json_file = id_sum.import_json('%s\%s' % (input_file_dir, file))
+        json_file = id_sum.import_json(fullpath)
         id_sum.print_item_sums(json_file)
 
 
