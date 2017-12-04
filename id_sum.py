@@ -38,6 +38,9 @@ def main():
     id_sum = IdSum()
     for file in os.listdir(input_file_dir):
         print "printing items_sums for file: %s" % file
+        fullpath = '%s\%s' % (input_file_dir, file)
+        if os.name != 'nt':
+            fullpath = '%s/%s' % (input_file_dir, file)
         json_file = id_sum.import_json('%s\%s' % (input_file_dir, file))
         id_sum.print_item_sums(json_file)
 
