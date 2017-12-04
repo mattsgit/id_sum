@@ -10,7 +10,7 @@ To Install and see all files in ```input_files``` folder tested: ```git clone ht
 
 ## Tests
 
-Inside the ```tests``` folder you can add new tests by ```assert```-ing something in any function that starts with the string ```test_```. Tests will run in <a href="https://travis-ci.org/mattsgit/id_sum">travis on each commit</a>
+Inside the ```tests``` folder you can add new tests by ```assert```-ing something in any function that starts with the string ```test_```. Tests will run in <a href="https://travis-ci.org/mattsgit/id_sum">travis on each commit</a> by calling ```pytest``` which you can run locally as well if you first ```pip install pytest```
 
 ## Contributors
 
